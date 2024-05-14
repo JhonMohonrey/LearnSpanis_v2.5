@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/LearnSpanis_v2.5/static/css/main.9d152238.css",
+    "main.js": "/LearnSpanis_v2.5/static/js/main.d284285a.js",
+    "static/js/453.89e66b10.chunk.js": "/LearnSpanis_v2.5/static/js/453.89e66b10.chunk.js",
+    "static/media/addBtn.svg": "/LearnSpanis_v2.5/static/media/addBtn.a8adb3bea5c126cb101209689f76ea53.svg",
+    "index.html": "/LearnSpanis_v2.5/index.html",
+    "static/media/box.svg": "/LearnSpanis_v2.5/static/media/box.695191a5ab7f3dd8ac340751a2284cd2.svg",
+    "static/media/delete.svg": "/LearnSpanis_v2.5/static/media/delete.bc97a0c0c7725ce68b83df85328751ee.svg",
+    "main.9d152238.css.map": "/LearnSpanis_v2.5/static/css/main.9d152238.css.map",
+    "main.d284285a.js.map": "/LearnSpanis_v2.5/static/js/main.d284285a.js.map",
+    "453.89e66b10.chunk.js.map": "/LearnSpanis_v2.5/static/js/453.89e66b10.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d152238.css",
+    "static/js/main.d284285a.js"
+  ]
+}
