@@ -1,0 +1,734 @@
+body {
+  margin-top: 120px;
+  background-color: #E4EBF5;
+}
+
+.HeaderContainer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 10px 12px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  z-index: 11;
+}
+
+.HeaderContainer .HeaderMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.HeaderContainer .HeaderMenu .activeSpan {
+  border-bottom: 5px solid red;
+  opacity: 1;
+  color: red;
+}
+
+.HeaderContainer .HeaderMenu span {
+  padding: 0px 10px;
+  opacity: .85;
+}
+
+.HeaderContainer .HeaderMenu p {
+  margin: 0;
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.HeaderContainer .HeaderMenu p:active {
+  opacity: .8;
+}
+
+.HeaderContainer h1 {
+  margin: 0;
+  cursor: pointer;
+  font-size: 60px;
+}
+
+.HeaderContainer h1 span {
+  color: red;
+}
+
+.HeaderContainer h1 span:hover {
+  color: #c70000;
+}
+
+.NotFolder {
+  display: none;
+}
+
+.containerNB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 10px;
+}
+
+.containerNB p {
+  margin: 0 10px;
+}
+
+.create_card_container {
+  position: relative;
+}
+
+.create_card_container .add_folder_container {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.create_card_container .add_folder_container input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 90%;
+  padding: 5px 8px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 1px solid #3E4450;
+}
+
+.create_card_container .add_folder_container button {
+  background-color: #C50D2F;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.create_card_container .add_folder_container button:active {
+  opacity: .9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Folder {
+  border: 1px solid #3E4450;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 16px 10px;
+  background-color: #7FCFD6;
+}
+
+.Folder .title_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px 0px;
+}
+
+.Folder .title_container .title {
+  padding: 5px 0px;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.Folder .active_indicator {
+  margin-left: 10px;
+}
+
+.Folder .active_indicator label {
+  font-weight: bold;
+}
+
+.Folder p {
+  margin: 0;
+}
+
+.Folder .count_cards {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Folder .count_cards img {
+  margin-right: 8px;
+}
+
+.Folder h3 {
+  margin: 0;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.Folder .control_container {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  margin: 8px 5px;
+  padding: 0px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Folder img {
+  width: 25px;
+}
+
+.Folder button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 5px 0px;
+}
+
+.Folder .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.addCard_container .top_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.addCard_container .top_container h3 {
+  margin: 0;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.addCard_container .top_container button {
+  padding: 7px 20px;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: #C50D2F;
+  color: white;
+}
+
+.addCard_container .top_container button:active {
+  opacity: .9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.addCard_container .createCard_container {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.addCard_container .createCard_container input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 90%;
+  font-size: 15px;
+  padding: 10px 5px;
+  margin: 7px 0px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border: 1px solid #3E4450;
+  border-radius: 8px;
+}
+
+.addCard_container .createCard_container button {
+  background-color: #C50D2F;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.addCard_container .createCard_container button:active {
+  opacity: .9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.cards {
+  border: 2px solid black;
+  margin: 18px 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #7FCFD6;
+  padding-top: 10px;
+  position: relative;
+}
+
+.cards span {
+  background-color: #3E4450;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 0px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+.cards div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards .frontAndBack {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.cards .frontAndBack input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 90%;
+  border: 1px solid #3E4450;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+.cards .frontAndBack h3 {
+  margin: 0;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cards .hideControl {
+  display: none;
+}
+
+.cards .control {
+  gap: 10px;
+  padding: 10px 0px;
+  background-color: white;
+  margin: 10px 5px;
+  border-radius: 10px;
+}
+
+.cards .control button {
+  background-color: #C50D2F;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cards .control button:active {
+  opacity: .9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.lstContainer {
+  border: 1px solid black;
+  width: 100%;
+  margin: 10px 5px;
+  border-radius: 10px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0px;
+}
+
+.lstContainer h3 {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.lstContainer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.lstContainer div .lstDel {
+  background-color: #C50D2F;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.lstContainer div .lstDel:active {
+  opacity: .9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.lstContainer div .lstCan {
+  background-color: #7FCFD6;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.lstContainer div .lstCan:active {
+  opacity: .9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.practiceContainer .practiceMain {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  margin: 12px;
+  height: 320px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.practiceContainer .practiceMain div {
+  width: 101%;
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.practiceContainer .practiceMain .frontCards {
+  border-radius: 19px 19px 0px 0px;
+  border-bottom: 1px solid black;
+  background-color: #303A53;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.practiceContainer .practiceMain .frontCards h3 {
+  width: 90%;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.practiceContainer .practiceMain .backCards {
+  border-radius: 0px 0px 19px 19px;
+  background-color: #596174;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  border-top: 1px solid black;
+}
+
+.practiceContainer .practiceMain .backCards h3 {
+  text-align: center;
+  width: 90%;
+  word-wrap: break-word;
+}
+
+.practiceContainer .practiceMain .timer {
+  border: 2px solid black;
+  background-color: black;
+  position: absolute;
+  right: 15px;
+  width: 50px;
+  color: white;
+  top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+}
+
+.practiceContainer .practiceMain h3 {
+  color: #ffffff;
+}
+
+.practiceContainer .practiceMain h1 {
+  margin: 12px 0px;
+}
+
+.practiceContainer .practiceBtnControl {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.practiceContainer .practiceBtnControl .shuffle {
+  background-color: #A1CCD2;
+}
+
+.practiceContainer .practiceBtnControl .flip {
+  background-color: #FD9282;
+}
+
+.practiceContainer .practiceBtnControl .play {
+  background-color: #475268;
+  color: white;
+}
+
+.practiceContainer .practiceBtnControl button {
+  padding: 4px 20px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.practiceContainer .practiceBtnControl button:active {
+  opacity: .8;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.confirm_container {
+  background-color: white;
+  margin: 10px 5px;
+  border-radius: 10px;
+}
+
+.confirm_container h3 {
+  margin: 0;
+}
+
+.confirm_container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  padding-bottom: 5px;
+}
+
+.confirm_container div button:active {
+  opacity: .8;
+}
+
+.confirm_container div .confirm {
+  background-color: #C50D2F;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.confirm_container div .cancel {
+  background-color: #7FCFD6;
+  color: #303A53;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 435px) {
+  .HeaderContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .HeaderContainer h1 {
+    font-size: 30px;
+  }
+  .HeaderContainer .HeaderMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 8px;
+  }
+  .HeaderContainer .HeaderMenu p {
+    font-size: 15.5px;
+  }
+  .AddCards {
+    padding: 10px;
+  }
+  .AddCards input {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 5px;
+    font-size: 18px;
+    padding: 8px;
+  }
+  .AddCards button {
+    margin-top: 20px;
+    padding: 5px 30px;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=Style.css.map */
