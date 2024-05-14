@@ -7,8 +7,8 @@ function Header(props) {
 
     return (
         <div className='HeaderContainer'>
-            <h1>
-                Learn <span>Spanish</span> v2.5
+            <h1 className='title'>
+                Learn<span>Spanish</span> <span className='version'>v2.5</span>
             </h1>
 
             <div className='HeaderMenu'>

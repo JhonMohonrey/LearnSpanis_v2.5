@@ -116,6 +116,7 @@ body {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border: 1px solid #3E4450;
+  font-size: 20px;
 }
 
 .create_card_container .add_folder_container button {
@@ -130,6 +131,7 @@ body {
   cursor: pointer;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 21px;
 }
 
 .create_card_container .add_folder_container button:active {
@@ -144,7 +146,7 @@ body {
           box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   margin: 16px 10px;
-  background-color: #7FCFD6;
+  background-color: #596174;
 }
 
 .Folder .title_container {
@@ -163,8 +165,10 @@ body {
 .Folder .title_container .title {
   padding: 5px 0px;
   width: 160px;
+  letter-spacing: .5px;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: white;
   white-space: nowrap;
 }
 
@@ -174,6 +178,8 @@ body {
 
 .Folder .active_indicator label {
   font-weight: bold;
+  font-size: 20px;
+  color: white;
 }
 
 .Folder p {
@@ -188,6 +194,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .Folder .count_cards img {
@@ -217,7 +225,7 @@ body {
 }
 
 .Folder img {
-  width: 25px;
+  width: 30px;
 }
 
 .Folder button {
@@ -270,6 +278,7 @@ body {
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   background-color: #C50D2F;
   color: white;
+  font-size: 20px;
 }
 
 .addCard_container .top_container button:active {
@@ -300,7 +309,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 90%;
-  font-size: 15px;
+  font-size: 20px;
   padding: 10px 5px;
   margin: 7px 0px;
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
@@ -314,11 +323,11 @@ body {
   border: none;
   color: white;
   font-weight: bold;
-  padding: 5px 15px;
+  padding: 10px 20px;
   border-radius: 10px;
-  margin-top: 10px;
-  font-size: 15px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 20px;
+  margin-bottom: 12px;
   cursor: pointer;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -346,20 +355,23 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #7FCFD6;
+  background-color: #596174;
   padding-top: 10px;
   position: relative;
 }
 
 .cards span {
-  background-color: #3E4450;
+  background-color: #ffffff;
   position: absolute;
   top: 5px;
   left: 5px;
-  padding: 0px 20px;
+  padding: 2px 20px;
   font-size: 15px;
   border-radius: 5px;
-  color: white;
+  color: black;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .cards div {
@@ -380,6 +392,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .cards .frontAndBack input {
@@ -389,11 +403,16 @@ body {
   border: 1px solid #3E4450;
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 5px;
+  padding: 5px 8px;
+  font-size: 18px;
+  margin: 2px 0px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .cards .frontAndBack h3 {
   margin: 0;
+  color: white;
   width: 90%;
   text-align: center;
   overflow: hidden;
@@ -406,8 +425,8 @@ body {
 }
 
 .cards .control {
-  gap: 10px;
-  padding: 10px 0px;
+  gap: 20px;
+  padding: 20px 0px;
   background-color: white;
   margin: 10px 5px;
   border-radius: 10px;
@@ -418,9 +437,10 @@ body {
   border: none;
   color: white;
   font-weight: bold;
-  padding: 5px 15px;
+  padding: 10px 25px;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 18px;
+  letter-spacing: .8px;
   cursor: pointer;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -671,18 +691,58 @@ body {
   background-color: #C50D2F;
   color: white;
   font-weight: bold;
-  font-size: 15px;
-  padding: 5px 20px;
+  font-size: 20px;
+  padding: 10px 20px;
   border-radius: 5px;
+  letter-spacing: 1px;
 }
 
 .confirm_container div .cancel {
   background-color: #7FCFD6;
   color: #303A53;
   font-weight: bold;
-  font-size: 15px;
-  padding: 5px 20px;
+  font-size: 20px;
+  padding: 10px 20px;
   border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+}
+
+.aboutContainer h1 {
+  margin: 0;
+}
+
+.aboutContainer .name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.aboutContainer p {
+  text-align: center;
+  font-size: 20px;
+  margin: 15px 0px;
+}
+
+.aboutContainer .copy {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: .5px;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 435px) {
@@ -696,7 +756,12 @@ body {
             flex-direction: column;
   }
   .HeaderContainer h1 {
-    font-size: 30px;
+    font-size: 25px;
+  }
+  .HeaderContainer .version {
+    font-size: 15px;
+    color: black;
+    opacity: .8;
   }
   .HeaderContainer .HeaderMenu {
     display: -webkit-box;
