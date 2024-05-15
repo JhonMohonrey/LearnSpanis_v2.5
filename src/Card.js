@@ -57,7 +57,7 @@ function Card(props) {
             <div className={props.showDelete ? "hideControl" : "control"}>
                 {
                     props.isEdit ? null : 
-                    <button
+                    <button 
                         onClick={() => {
                             // props.confirm(props.data.isDouble)
                             props.deleteCardsBtn(props.id, props.isDouble)
@@ -65,7 +65,7 @@ function Card(props) {
                 }
                     
 
-                <button
+                <button className='STDEdit'
                     onClick={() => {
                         props.isEditCard(props.id, frontData, backData)
                     }}

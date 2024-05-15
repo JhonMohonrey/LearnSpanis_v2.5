@@ -18,11 +18,15 @@ body {
   z-index: 11;
 }
 
+.HeaderContainer img {
+  width: 25px;
+}
+
 .HeaderContainer .HeaderMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 50px;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
@@ -35,9 +39,9 @@ body {
 }
 
 .HeaderContainer .HeaderMenu .activeSpan {
-  border-bottom: 5px solid red;
+  border-bottom: 3px solid black;
   opacity: 1;
-  color: red;
+  margin-bottom: -5px;
 }
 
 .HeaderContainer .HeaderMenu span {
@@ -60,6 +64,7 @@ body {
   margin: 0;
   cursor: pointer;
   font-size: 60px;
+  margin-bottom: 10px;
 }
 
 .HeaderContainer h1 span {
@@ -173,6 +178,7 @@ body {
 }
 
 .Folder .active_indicator {
+  margin: 15px 0px;
   margin-left: 10px;
 }
 
@@ -215,7 +221,7 @@ body {
   display: flex;
   border-radius: 10px;
   margin: 8px 5px;
-  padding: 0px 10px;
+  padding: 10px 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -225,7 +231,7 @@ body {
 }
 
 .Folder img {
-  width: 30px;
+  width: 35px;
 }
 
 .Folder button {
@@ -242,11 +248,15 @@ body {
   margin: 5px 0px;
 }
 
+.Folder button:active {
+  opacity: .5;
+}
+
 .Folder .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .addCard_container .top_container {
@@ -432,6 +442,11 @@ body {
   border-radius: 10px;
 }
 
+.cards .control .STDEdit {
+  background-color: #7FCFD6;
+  color: #151a27;
+}
+
 .cards .control button {
   background-color: #C50D2F;
   border: none;
@@ -487,7 +502,7 @@ body {
   font-weight: bold;
   padding: 5px 15px;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -502,11 +517,11 @@ body {
 .lstContainer div .lstCan {
   background-color: #7FCFD6;
   border: none;
-  color: black;
+  color: #151a27;
   font-weight: bold;
   padding: 5px 15px;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -643,8 +658,8 @@ body {
 }
 
 .practiceContainer .practiceBtnControl button {
-  padding: 4px 20px;
-  font-size: 15px;
+  padding: 10px 20px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: bold;
   border: 2px solid black;
@@ -718,7 +733,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 15px;
+  padding-bottom: 300px;
+}
+
+.aboutContainer .aboutContent {
+  padding: 0px 15px;
 }
 
 .aboutContainer h1 {
@@ -727,22 +746,74 @@ body {
 
 .aboutContainer .name {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .aboutContainer p {
   text-align: center;
-  font-size: 20px;
+  font-size: 13px;
   margin: 15px 0px;
 }
 
-.aboutContainer .copy {
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.footer {
+  width: 100%;
+  background-color: #151a27;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-left: 12px;
+}
+
+.footer .tools img {
+  width: 28px;
+}
+
+.footer .myName {
   font-weight: bold;
-  letter-spacing: .5px;
-  font-size: 18px;
+  font-size: 15px;
+  letter-spacing: .8px;
+}
+
+.footer .by {
+  margin-left: 35px;
+}
+
+.footer span {
+  color: white;
+}
+
+.footer h2 {
+  color: white;
+  margin: 0;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.footer h3 {
+  color: white;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.footer p {
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  text-align: center;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.NoSelectedFolder {
+  text-align: center;
 }
 
 @media only screen and (max-width: 435px) {

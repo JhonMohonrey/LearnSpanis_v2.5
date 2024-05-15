@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 512 512"  xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#000000;}
-</style>
-<g>
-	<rect y="19.203" class="st0" width="512" height="112"/>
-	<path class="st0" d="M24,492.797h464v-336H24V492.797z M192,224.797h128v40H192V224.797z"/>
-</g>
-</svg>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" fill-rule="evenodd">
+<path d="m0 0h32v32h-32z"/>
+<path d="m24 0c3.3137085 0 6 2.6862915 6 6v20c0 3.3137085-2.6862915 6-6 6h-16c-3.3137085 0-6-2.6862915-6-6v-20c0-3.3137085 2.6862915-6 6-6zm-6 25h-4c-.5522847 0-1 .4477153-1 1s.4477153 1 1 1h4c.5522847 0 1-.4477153 1-1s-.4477153-1-1-1zm8-5h-20c-.55228475 0-1 .4477153-1 1s.44771525 1 1 1h20c.5522847 0 1-.4477153 1-1s-.4477153-1-1-1zm-8-5h-4c-.5522847 0-1 .4477153-1 1s.4477153 1 1 1h4c.5522847 0 1-.4477153 1-1s-.4477153-1-1-1zm8-5h-20c-.55228475 0-1 .4477153-1 1s.44771525 1 1 1h20c.5522847 0 1-.4477153 1-1s-.4477153-1-1-1zm-8-5h-4c-.5522847 0-1 .44771525-1 1s.4477153 1 1 1h4c.5522847 0 1-.44771525 1-1s-.4477153-1-1-1z" fill="#202327"/>
+</g>
+</svg>

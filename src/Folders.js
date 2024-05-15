@@ -1,6 +1,6 @@
 import React from 'react';
 import deleteLogo from './asset/delete.svg';
-import addCardLogo from './asset/addBtn.svg';
+import addCardLogo from './asset/addC.png';
 import boxSvg from './asset/box.svg';
 import Confirm from './Confirm';
 
@@ -43,7 +43,7 @@ function Folders(props) {
                             <img src={deleteLogo} />
                         </button>
 
-                        <button onClick={() => {
+                        <button className='addCd' onClick={() => {
                                 props.addCardBtn(props.isDouble)
                         }} >
                             <img src={addCardLogo} />

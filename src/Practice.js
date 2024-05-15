@@ -19,12 +19,12 @@ function Practice(props) {
             }
         })
     } else {
-        display = <h3>We couldn't locate any folder. Please create a folder to continue.</h3>
+        display = <h3 className='NoSelectedFolder' >We couldn't locate any folder. Please create a folder to continue.</h3>
     }
 
     if (props.mainData[0] !== undefined && noActive === false) {
         console.log("it has a folder but no active")
-        display = <h3>Please select a folder to proceed!</h3>
+        display = <h3 className='NoSelectedFolder'>Please select a folder to proceed!</h3>
     }
 
     return (
