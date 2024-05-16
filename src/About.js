@@ -6,15 +6,31 @@ function About(props) {
         <div className='aboutContainer'>
             {/* <h1>About</h1> */}
             <div className='aboutContent'>
-                <p className='name'>Hello, I'm Jhon Ramos, the creator of LearnSpanish.</p>
-                <p>LearnSpanish is a flashcard application designed to help you memorize words quickly and efficiently. As a language learner myself, I understand the importance of vocabulary acquisition in the learning process. However, I found existing flashcard apps lacking in certain aspects, which is why I decided to create LearnSpanish.</p>
+                {/* <p className='name'>Hello, I'm Jhon Ramos, the creator of FlashCard.</p> */}
+
+                <h3>Empowering Language Acquisition through Flashcard Technology</h3>
+
+                <p>
+                Flashcard is a mobile application designed to revolutionize vocabulary acquisition for language learners. Recognizing the limitations of existing tools, I, a fellow language enthusiast, developed Flashcard to address these shortcomings and optimize the learning experience.
+                </p>
+
+                <h3>
+                Unparalleled Flexibility and Organization
+                </h3>
 
                 
                 <p>
-    One of the unique features of LearnSpanish is the ability to create unlimited cards and folders. With LearnSpanish, you can organize your flashcards into folders based on different topics, courses, or languages. You can easily add, edit, or delete cards, allowing you to tailor your learning experience to your specific needs.</p>
+                Flashcard offers unparalleled flexibility with the ability to create unlimited cards and organize them into meticulously categorized folders. Whether you're mastering specific topics, tackling challenging courses, or conquering new languages, Flashcard empowers you to tailor your learning journey with ease. The intuitive interface allows for effortless card creation, editing, and deletion, ensuring a seamless and personalized experience.
+                </p>
+
+                <h3>
+                A User-Centric Approach to Language Learning
+                </h3>
 
 
-                <p>My goal with LearnSpanish is to provide users with a user-friendly, intuitive, and effective tool to enhance their language learning experience. Whether you're studying for an exam, learning a new language, or simply looking to expand your vocabulary, LearnSpanish is here to make the memorization process easier and more enjoyable for you.</p>
+                <p>
+                Flashcard prioritizes user experience by providing an intuitive and user-friendly platform. Our goal is to transform the memorization process into an engaging and enjoyable experience.  Whether your objective is exam preparation, language acquisition from scratch, or vocabulary expansion, Flashcard is your ideal companion.
+                </p>
             </div>
           
 

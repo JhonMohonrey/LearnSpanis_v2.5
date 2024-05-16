@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import backBtn from './asset/arrow.png'
 
 function DisplayCard(props) {
     let [front, setFront] = React.useState("")
@@ -36,7 +37,9 @@ function DisplayCard(props) {
                 <h3>
                     {props.addPosition[0].folderName}
                 </h3>
-                <button onClick={props.backAddCardBtn} >Back</button>
+                <button onClick={props.backAddCardBtn} >
+                    <img src={backBtn} />
+                </button>
             </div>
 
             <div className='createCard_container'>

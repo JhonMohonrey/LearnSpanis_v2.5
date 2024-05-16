@@ -91,7 +91,7 @@ function App() {
           ...prev,
           [
             {
-              folderName: `${FolderName} (${prev.length +1})`,
+              folderName: `${FolderName}`,
               key: Math.random(),
               indexPosition: prev.length,
               isCard: false,

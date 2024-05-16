@@ -1,4 +1,5 @@
 import React from 'react';
+import add from './asset/addBtn (2).png'
 
 function AddFolder(props) {
 
@@ -10,13 +11,18 @@ function AddFolder(props) {
         
     return (
         <form className='add_folder_container'>
-            <input 
-                type='text'
-                onChange={folderName}
-                placeholder='Folder name'/>
+            <div className='addFolder'>
+                <input 
+                    type='text'
+                    onChange={folderName}
+                    placeholder='Folder name...'/>
 
-            <button onClick={() => props.addFolderBtn(name)}
-            >Add Folder</button>
+                <button onClick={() => props.addFolderBtn(name)}
+                >
+                    <img src={add} />
+                </button>
+
+            </div>
         </form>
     );
 }

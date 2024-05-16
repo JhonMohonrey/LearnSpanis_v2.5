@@ -95,14 +95,14 @@ body {
 }
 
 .create_card_container .add_folder_container {
-  padding: 10px;
+  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -111,11 +111,45 @@ body {
           justify-content: center;
 }
 
+.create_card_container .add_folder_container .addFolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 98%;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.create_card_container .add_folder_container .addFolder input {
+  border: none;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 100%;
+  margin: 0;
+  outline: none;
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
 .create_card_container .add_folder_container input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 90%;
-  padding: 5px 8px;
+  padding: 7px 8px;
   margin: 10px 0px;
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -124,19 +158,18 @@ body {
   font-size: 20px;
 }
 
+.create_card_container .add_folder_container img {
+  width: 30px;
+  border-left: none;
+}
+
+.create_card_container .add_folder_container img:active {
+  opacity: .5;
+}
+
 .create_card_container .add_folder_container button {
-  background-color: #C50D2F;
   border: none;
-  color: white;
-  font-weight: bold;
-  padding: 5px 15px;
-  border-radius: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  cursor: pointer;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  font-size: 21px;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .create_card_container .add_folder_container button:active {
@@ -280,19 +313,19 @@ body {
   white-space: nowrap;
 }
 
+.addCard_container .top_container img {
+  width: 40px;
+}
+
 .addCard_container .top_container button {
-  padding: 7px 20px;
   border: none;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  background-color: #C50D2F;
   color: white;
-  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .addCard_container .top_container button:active {
-  opacity: .9;
+  opacity: .5;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -730,6 +763,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -743,22 +777,28 @@ body {
   margin: 0;
 }
 
+.aboutContainer h3 {
+  font-size: 15px;
+  margin-top: 29px;
+}
+
 .aboutContainer .name {
   font-weight: bold;
   font-size: 15px;
 }
 
 .aboutContainer p {
-  text-align: center;
+  text-align: left;
   font-size: 13px;
   margin: 15px 0px;
 }
 
 .footer {
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #151a27;
-  padding: 20px;
-  position: fixed;
+  padding: 10px 5px;
   bottom: 0;
 }
 
@@ -803,9 +843,9 @@ body {
 
 .footer p {
   color: white;
-  font-size: 15px;
+  font-weight: bold;
+  font-size: 13px;
   text-align: left;
-  text-align: center;
   margin: 0;
   margin-left: 10px;
   margin-top: 30px;
